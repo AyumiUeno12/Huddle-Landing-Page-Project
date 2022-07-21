@@ -4,23 +4,6 @@
 
 /*
 
-### Layout:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-### Primary:
-
-- Pink: hsl(322, 100%, 66%)
-- Light Pink: hsl(321, 100%, 78%)
-- Light Red: hsl(0, 100%, 63%)
-
-### Neutral:
-
-- Very Dark Cyan: hsl(192, 100%, 9%)
-- Very Pale Blue: hsl(207, 100%, 98%)
-
-
 ### Typography system:
 
 FONT SIZE SYSTEM (px):
@@ -31,40 +14,12 @@ SPACING SYSTEM (px):
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 
-### Font-Style:
-
-For Headings :
-- Family: Poppins
-
-For paragraph :
-- Family: Open Sans
-
-
 ### Font size default setup: 
 
 -Default: 1 rem = 16px
 -Reset: 1 rem = 10px
 10px/16px = 62.5%
 
-
-### Font-weights:
-
-For heading:
-Bold: 700
-
-For paragraph:
-Default: 400
-Semibold: 600
-Bold: 700
-
-
-### Line-heights:
-
-- xx for headings
-- 1.6 for paragraphs
-
-### Border-radius
-Default: xpx
 
 */
 
@@ -105,6 +60,8 @@ main {
   padding: 0 6rem;
 }
 
+/* HEADER */
+
 header {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -128,6 +85,95 @@ header img {
   height: 30px;
 }
 
-/* 
-Community Section
-*/
+/* Community */
+
+.community-section {
+  max-width: 33rem;
+  padding-top: 4rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 6.4rem;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
+}
+
+.community-section p {
+  max-width: 45rem;
+  width: 100%;
+  line-height: 1.6;
+  margin-bottom: 4rem;
+}
+
+.start-free-btn,
+.start-free-btn:link,
+.start-free-btn:visited {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  color: white;
+
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  padding: 1rem 3.5rem;
+  margin-bottom: 8rem;
+}
+
+.start-free-btn:hover,
+.start-free-btn:active {
+  background-color: hsla(322, 100%, 66%, 0.51);
+}
+
+.community-section img {
+  width: 100%;
+}
+
+/* DATA SECTION */
+
+/* IFORMATION SECTION */
+/* COMMUNITY SECTION PURPOSE */
+.information-section img {
+  height: 10rem;
+}
+
+/*******************************/
+/* Media Queries */
+/*******************************/
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 122rem;
+    margin: 0 auto;
+  }
+
+  .community-section {
+    max-width: 80rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .community-section p {
+    font-size: 18px;
+    max-width: 35rem;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
+  }
+
+  .community-section img {
+    width: 85%;
+  }
+}
