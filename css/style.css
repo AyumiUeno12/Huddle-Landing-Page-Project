@@ -39,7 +39,7 @@ SPACING SYSTEM (px):
 
 body {
   color: hsl(192, 100%, 9%);
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   height: 100%;
@@ -51,7 +51,7 @@ body {
 /*******************************/
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* AYUMI'S CODE HERE */
@@ -96,7 +96,7 @@ header img {
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.4;
@@ -113,7 +113,7 @@ h2 {
 .start-free-btn,
 .start-free-btn:link,
 .start-free-btn:visited {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   letter-spacing: 0.1rem;
   color: white;
@@ -152,7 +152,7 @@ h2 {
 /* Media Queries */
 /*******************************/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) /* FOR DESKTOP VERSION (larger than 768px) */ {
   main {
     max-width: 122rem;
     margin: 0 auto;
