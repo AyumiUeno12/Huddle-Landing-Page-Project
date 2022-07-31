@@ -113,6 +113,8 @@ header img {
   height: 10rem;
 }
 
+/* INFORMATION SECTION */
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 768px) /* FOR DESKTOP VERSION (larger than 768px) */ {
