@@ -105,40 +105,44 @@ header img {
   width: 100%;
 }
 
-/* DATA SECTION */
-
-/* IFORMATION SECTION */
-/* COMMUNITY SECTION PURPOSE */
-.information-section img {
-  width: 100%;
-}
-
 /* INFORMATION SECTION */
 
 .information-section {
   margin-bottom: 6.4rem;
 }
 
-/* .grow-together-section,
+.bg-mobile-img {
+  display: block;
+  width: 100%;
+}
+
+.bg-desktop-img {
+  display: none;
+}
+
+.information-bg {
+  background-color: #f6fbff;
+}
+
+.grow-together-section,
 .flowing-conversation-section,
 .your-users-section {
   margin: 0 auto;
   max-width: 35rem;
   text-align: center;
-  padding: 4rem 7vw 0 7vw;
-} */
+  padding: 0 7vw 0 7vw;
+}
 
 .info-content {
   margin: 0 auto;
   max-width: 35rem;
   text-align: center;
-  padding: 4rem 7vw 0 7vw;
+  padding: 0 7vw 0 7vw;
 }
 
 .information-section h3 {
   font-family: "Poppins", sans-serif;
-  /* font-size: clamp(1.8rem, 9vw, 2.5rem); */
-  font-size: 1.6rem;
+  font-size: clamp(1.6rem, 5vw, 1.8rem);
   font-weight: 700;
   line-height: 1.4;
   margin-bottom: 1.5rem;
@@ -151,21 +155,9 @@ header img {
   padding-bottom: 4rem;
 }
 
-.grow-together-section img,
-.flowing-conversation-section img,
-.your-users-section img {
-  margin-bottom: 5rem;
-}
-
-.grow-together-section,
-.your-users-section {
-  background-color: pink;
-}
-
-.grow-together-section {
-  background-image: url("/images/bg-section-top-desktop-1.svg");
-  background-repeat: no-repeat;
-  background-position: 0 -6rem;
+.info-img {
+  padding: 6.4rem 5vw;
+  width: 100%;
 }
 
 .flowing-conversation-section {
@@ -192,17 +184,17 @@ header img {
   }
 
   .community-section {
-    max-width: 80rem;
+    max-width: 90rem;
     margin-top: 5rem;
   }
 
   .community-section h2 {
-    font-size: 2.8rem;
+    font-size: clamp(2.8rem, 4vw, 3.4rem);
   }
 
   .community-section p {
-    font-size: 1.1rem;
-    max-width: 35rem;
+    font-size: 1.2rem;
+    max-width: 38rem;
     margin: 0 auto;
     margin-bottom: 3.2rem;
   }
@@ -210,7 +202,67 @@ header img {
   .start-free-btn,
   .start-free-btn:link,
   .start-free-btn:visited {
+    font-size: 1rem;
     padding: 1rem 3.5rem;
     margin-bottom: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) /* FOR INFORMATION SECTION - DESKTOP*/ {
+  .information-section {
+    max-width: 150rem;
+    margin: 0 auto;
+    margin-bottom: 6.4rem;
+  }
+
+  .info-content {
+    padding: 0;
+    margin: auto;
+  }
+
+  .info-img {
+    width: 100%;
+    padding: 2.4rem 0;
+  }
+
+  .information-section h3 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    text-align: left;
+  }
+
+  .info-content p {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0;
+  }
+
+  .bg-mobile-img {
+    display: none;
+  }
+
+  .bg-desktop-img {
+    display: block;
+    width: 100%;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .grid-2-col > div:nth-child(1) {
+    order: 2;
+  }
+
+  .grow-together-section,
+  .flowing-conversation-section,
+  .your-users-section {
+    max-width: 150rem;
+    width: 100%;
+  }
+
+  .flowing-conversation-section {
+    margin: 10rem auto;
   }
 }
